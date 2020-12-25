@@ -1,0 +1,114 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8082
+
+spring:
+  cloud:
+    nacos:
+      server-addr: 47.115.162.144:8847    # 使用宋润涵组 nacos
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.115.162.144:3306/oomall?serverTimezone=GMT%2B8
+    username: OOMall
+    password: 1234567
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialization-mode: always
+    druid:
+      initial-size: 3
+      min-idle: 3
+      max-active: 100
+      max-wait: 60000
+      stat-view-servlet:
+        login-username: admin
+        login-password: 123456
+        enabled: true
+        url-pattern: /druid/*
+
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 100
+      validation-query: select 1
+    sql-script-encoding: UTF-8
+
+mybatis:
+  # domain
+  type-aliases-package: cn.edu.xmu.oomall.model.po
+  # mapper.xml  location
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 0
+    #连接池最大连接数（使用负值表示没有限制）
+    lettuce:
+      pool:
+        max-active: 100
+        # 连接池中的最大空闲连接
+        max-idle: 100
+        # 连接池中的最小空闲连接
+        min-idle: 0
+        #连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+    # 连接超时时间（毫秒）
+    timeout: 5000
+
+
+    otherservice:
+      #是否对数据库中的未初始化的数据初始化
+      initialization: true
+      #分布式锁失效时间（秒）
+      lockerExpireTime: 30
+      #dav信息配置
+      dav:
+        username: oomall
+        password: admin
+        baseUrl: http://172.16.1.66:8081/img/
+      user:
+        # user的权限字在Redis中失效秒数
+        expiretime: 600
+      role:
+        # role的权限字在Redis中失效秒数
+        expiretime: 600
+      login:
+        #是否允许重复登录
+        multiply: false
+        #jwt过期的时间(秒)
+        jwtExpire: 3600
+
+        #pagehelper分页插件配置
+        pagehelper:
+          helper-dialect: mysql
+
+
+
+
+dubbo:
+  application:
+    name: customer-service
+  scan:
+    base-packages: cn.edu.xmu.goods.service
+  registry:
+    address: nacos://47.115.162.144:8847
+  protocol:
+    name: dubbo
+    port: 28091
+  consumer:
+    check: true
+

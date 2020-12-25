@@ -1,0 +1,584 @@
+2020-12-23 20:15:26.277 [main] INFO  o.a.d.s.b.c.event.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v2.7.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2020-12-23 20:15:26.286 [main] INFO  o.a.d.s.b.c.e.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=customer-service, dubbo.application.qos-enable=false, dubbo.config.multiple=true, dubbo.consumer.check=true, dubbo.protocol.name=dubbo, dubbo.protocol.port=28091, dubbo.registry.address=nacos://47.115.162.144:8847, dubbo.scan.base-packages=cn.edu.xmu.goods.service}
+2020-12-23 20:15:26.348 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-23 20:15:26.407 [main] INFO  cn.edu.xmu.other.CustomerApplication - Starting CustomerApplication on NULL0X73-FX63VM with PID 12272 (C:\^CODE\privilege-master\customer\target\classes started by ADMIN in C:\^CODE\privilege-master\customer)
+2020-12-23 20:15:26.408 [main] INFO  cn.edu.xmu.other.CustomerApplication - No active profile set, falling back to default profiles: default
+2020-12-23 20:15:27.186 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+2020-12-23 20:15:27.187 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+2020-12-23 20:15:27.188 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+2020-12-23 20:15:27.189 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 20:15:27.191 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+2020-12-23 20:15:27.233 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-23 20:15:27.235 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-23 20:15:27.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-12-23 20:15:27.381 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 20:15:27.381 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+2020-12-23 20:15:27.382 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 20:15:27.382 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 20:15:27.382 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 20:15:27.502 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 20:15:27.766 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 20:15:27.766 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 20:15:28.676 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-12-23 20:15:28.686 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-12-23 20:15:28.687 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-23 20:15:28.687 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-23 20:15:28.840 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-23 20:15:28.841 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2393 ms
+2020-12-23 20:15:29.224 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="customer-service" qosEnable="false" hostname="NULL0X73-FX63VM" />] have been binding by the configuration properties [{name=customer-service, qos-enable=false}]
+2020-12-23 20:15:29.242 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://47.115.162.144:8847" port="8847" protocol="nacos" />] have been binding by the configuration properties [{address=nacos://47.115.162.144:8847}]
+2020-12-23 20:15:29.250 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="28091" />] have been binding by the configuration properties [{name=dubbo, port=28091}]
+2020-12-23 20:15:29.266 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{check=true}]
+2020-12-23 20:15:29.273 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 20:15:35.736 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerApplication': Injection of @DubboReference dependencies is failed; nested exception is java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=12272&protocol=dubbo&qos.enable=false&register.ip=192.168.43.174&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608725729787&version=0.0.1-SNAPSHOT to the consumer 192.168.43.174 use dubbo version 2.7.8
+2020-12-23 20:15:35.737 [main] INFO  o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-12-23 20:15:35.743 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-23 20:15:35.909 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-23 20:15:35.920 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerApplication': Injection of @DubboReference dependencies is failed; nested exception is java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=12272&protocol=dubbo&qos.enable=false&register.ip=192.168.43.174&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608725729787&version=0.0.1-SNAPSHOT to the consumer 192.168.43.174 use dubbo version 2.7.8
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.postProcessPropertyValues(AbstractAnnotationBeanPostProcessor.java:146)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1425)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at cn.edu.xmu.other.CustomerApplication.main(CustomerApplication.java:16)
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=12272&protocol=dubbo&qos.enable=false&register.ip=192.168.43.174&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608725729787&version=0.0.1-SNAPSHOT to the consumer 192.168.43.174 use dubbo version 2.7.8
+	at org.apache.dubbo.config.ReferenceConfig.checkInvokerAvailable(ReferenceConfig.java:420)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:315)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:205)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:144)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.getInjectedObject(AbstractAnnotationBeanPostProcessor.java:359)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor$AnnotatedFieldElement.inject(AbstractAnnotationBeanPostProcessor.java:539)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.postProcessPropertyValues(AbstractAnnotationBeanPostProcessor.java:142)
+	... 18 common frames omitted
+2020-12-23 21:12:35.199 [main] INFO  o.a.d.s.b.c.event.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v2.7.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2020-12-23 21:12:35.207 [main] INFO  o.a.d.s.b.c.e.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=customer-service, dubbo.application.qos-enable=false, dubbo.config.multiple=true, dubbo.consumer.check=true, dubbo.protocol.name=dubbo, dubbo.protocol.port=28091, dubbo.registry.address=nacos://47.115.162.144:8847, dubbo.scan.base-packages=cn.edu.xmu.goods.service}
+2020-12-23 21:12:35.267 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-23 21:12:35.322 [main] INFO  cn.edu.xmu.other.CustomerApplication - Starting CustomerApplication on NULL0X73-FX63VM with PID 2044 (C:\^CODE\privilege-master\customer\target\classes started by ADMIN in C:\^CODE\privilege-master\customer)
+2020-12-23 21:12:35.323 [main] INFO  cn.edu.xmu.other.CustomerApplication - No active profile set, falling back to default profiles: default
+2020-12-23 21:12:36.273 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+2020-12-23 21:12:36.275 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+2020-12-23 21:12:36.276 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+2020-12-23 21:12:36.277 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 21:12:36.278 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+2020-12-23 21:12:36.312 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-23 21:12:36.314 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-23 21:12:36.352 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-12-23 21:12:36.434 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:12:36.434 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+2020-12-23 21:12:36.435 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:12:36.435 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:12:36.435 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:12:36.552 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 21:12:36.815 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 21:12:36.815 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 21:12:37.616 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-12-23 21:12:37.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-12-23 21:12:37.629 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-23 21:12:37.630 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-23 21:12:37.759 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-23 21:12:37.760 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2394 ms
+2020-12-23 21:12:38.057 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="customer-service" qosEnable="false" hostname="NULL0X73-FX63VM" />] have been binding by the configuration properties [{name=customer-service, qos-enable=false}]
+2020-12-23 21:12:38.068 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://47.115.162.144:8847" port="8847" protocol="nacos" />] have been binding by the configuration properties [{address=nacos://47.115.162.144:8847}]
+2020-12-23 21:12:38.074 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="28091" />] have been binding by the configuration properties [{name=dubbo, port=28091}]
+2020-12-23 21:12:38.085 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{check=true}]
+2020-12-23 21:12:38.093 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 21:12:44.663 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerApplication': Injection of @DubboReference dependencies is failed; nested exception is java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndNameByOther,getPriceAndName,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=2044&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608729158472&version=0.0.1-SNAPSHOT to the consumer 192.168.0.101 use dubbo version 2.7.8
+2020-12-23 21:12:44.665 [main] INFO  o.a.d.c.s.b.f.a.ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2020-12-23 21:12:44.672 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-23 21:12:44.761 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-23 21:12:44.765 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerApplication': Injection of @DubboReference dependencies is failed; nested exception is java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndNameByOther,getPriceAndName,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=2044&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608729158472&version=0.0.1-SNAPSHOT to the consumer 192.168.0.101 use dubbo version 2.7.8
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.postProcessPropertyValues(AbstractAnnotationBeanPostProcessor.java:146)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1425)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at cn.edu.xmu.other.CustomerApplication.main(CustomerApplication.java:16)
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service cn.edu.xmu.goods.client.IGoodsService. No provider available for the service cn.edu.xmu.goods.client.IGoodsService:0.0.1-SNAPSHOT from the url nacos://47.115.162.144:8847/org.apache.dubbo.registry.RegistryService?anyhost=true&application=customer-service&category=providers&check=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getShopIdBySKUId,getSku,getPriceAndNameByOther,getPriceAndName,getShopBySKUId,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=2044&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608729158472&version=0.0.1-SNAPSHOT to the consumer 192.168.0.101 use dubbo version 2.7.8
+	at org.apache.dubbo.config.ReferenceConfig.checkInvokerAvailable(ReferenceConfig.java:420)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:315)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:205)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:144)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.getInjectedObject(AbstractAnnotationBeanPostProcessor.java:359)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor$AnnotatedFieldElement.inject(AbstractAnnotationBeanPostProcessor.java:539)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at com.alibaba.spring.beans.factory.annotation.AbstractAnnotationBeanPostProcessor.postProcessPropertyValues(AbstractAnnotationBeanPostProcessor.java:142)
+	... 18 common frames omitted
+2020-12-23 21:13:56.490 [main] INFO  o.a.d.s.b.c.event.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v2.7.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2020-12-23 21:13:56.496 [main] INFO  o.a.d.s.b.c.e.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=customer-service, dubbo.application.qos-enable=false, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.protocol.name=dubbo, dubbo.protocol.port=28091, dubbo.registry.address=nacos://47.115.162.144:8847, dubbo.scan.base-packages=cn.edu.xmu.goods.service}
+2020-12-23 21:13:56.551 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-23 21:13:56.603 [main] INFO  cn.edu.xmu.other.CustomerApplication - Starting CustomerApplication on NULL0X73-FX63VM with PID 6804 (C:\^CODE\privilege-master\customer\target\classes started by ADMIN in C:\^CODE\privilege-master\customer)
+2020-12-23 21:13:56.603 [main] INFO  cn.edu.xmu.other.CustomerApplication - No active profile set, falling back to default profiles: default
+2020-12-23 21:13:57.357 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+2020-12-23 21:13:57.358 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+2020-12-23 21:13:57.359 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+2020-12-23 21:13:57.360 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 21:13:57.360 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+2020-12-23 21:13:57.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-23 21:13:57.395 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-23 21:13:57.436 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-12-23 21:13:57.521 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:13:57.522 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+2020-12-23 21:13:57.522 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:13:57.522 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:13:57.522 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 21:13:57.648 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 21:13:57.905 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 21:13:57.906 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 21:13:58.672 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-12-23 21:13:58.682 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-12-23 21:13:58.683 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-23 21:13:58.683 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-23 21:13:58.805 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-23 21:13:58.805 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2162 ms
+2020-12-23 21:13:59.100 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="customer-service" qosEnable="false" hostname="NULL0X73-FX63VM" />] have been binding by the configuration properties [{name=customer-service, qos-enable=false}]
+2020-12-23 21:13:59.113 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://47.115.162.144:8847" port="8847" protocol="nacos" />] have been binding by the configuration properties [{address=nacos://47.115.162.144:8847}]
+2020-12-23 21:13:59.120 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="28091" />] have been binding by the configuration properties [{name=dubbo, port=28091}]
+2020-12-23 21:13:59.130 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{check=false}]
+2020-12-23 21:13:59.136 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 21:14:03.729 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-12-23 21:14:04.006 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-23 21:14:04.327 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 21:14:08.329 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 21:14:09.235 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-23 21:14:09.740 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2020-12-23 21:14:09.755 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2020-12-23 21:14:09.769 [main] INFO  cn.edu.xmu.other.CustomerApplication - Started CustomerApplication in 13.65 seconds (JVM running for 14.167)
+2020-12-23 21:20:32.881 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-23 21:20:32.881 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-23 21:20:32.901 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2020-12-23 21:20:32.989 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:33.873 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:34.240 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:35.006 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:35.788 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:36.034 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:36.851 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:37.735 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:38.527 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:39.303 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:39.541 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:39.867 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:40.094 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:40.900 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:41.099 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:41.368 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:41.622 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:41.824 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:42.045 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:42.266 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:42.474 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:42.690 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:42.969 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:43.835 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:44.019 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:44.271 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:44.471 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:44.533 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:44.535 [http-nio-8082-exec-3] ERROR cn.edu.xmu.other.dao.RegionDao - getAncestor: 操作的资源id不存在
+2020-12-23 21:20:45.367 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:20:45.384 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:24.044 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:24.913 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:25.441 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:25.756 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:26.053 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:26.571 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:27.050 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:27.274 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:27.539 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:27.541 [http-nio-8082-exec-4] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '2020-12-22 1:2' could not be parsed at index 11
+2020-12-23 21:21:27.752 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:47.252 [http-nio-8082-exec-8] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "2020-12-40": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2020-12-40' could not be parsed: Invalid value for DayOfMonth (valid values 1 - 28/31): 40; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "2020-12-40": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2020-12-40' could not be parsed: Invalid value for DayOfMonth (valid values 1 - 28/31): 40
+ at [Source: (PushbackInputStream); line: 1, column: 13] (through reference chain: cn.edu.xmu.other.model.vo.CustomerRegisterReceiveVo["birthday"])]
+2020-12-23 21:21:48.116 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:48.623 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:21:48.641 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:18.569 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:18.833 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:19.045 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:19.281 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:19.512 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:19.709 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:19.936 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:21.094 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:21.935 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:22.724 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:23.472 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:24.265 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:24.269 [http-nio-8082-exec-9] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '1234-1321-321' could not be parsed at index 7
+2020-12-23 21:22:25.003 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:25.005 [http-nio-8082-exec-10] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '23432fq' could not be parsed at index 0
+2020-12-23 21:22:25.831 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:26.658 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:26.890 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:27.688 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:27.928 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:28.737 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:28.988 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:29.757 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:29.988 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:30.768 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:31.036 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:31.050 [http-nio-8082-exec-1] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '1234-1321-321' could not be parsed at index 7
+2020-12-23 21:22:31.822 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:32.032 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:32.034 [http-nio-8082-exec-3] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '23432fq' could not be parsed at index 0
+2020-12-23 21:22:32.814 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:33.649 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:33.919 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:34.692 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:34.950 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:35.751 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:36.524 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:37.286 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:37.521 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:37.753 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:38.482 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:38.499 [http-nio-8082-exec-4] ERROR cn.edu.xmu.other.dao.BeSharedPoDao - selectShare: Unknow Exception:Failed to invoke the method getSku in the service cn.edu.xmu.goods.client.IGoodsService. Tried 3 times of the providers [172.16.2.113:28091] (1/1) from the registry 47.115.162.144:8847 on the consumer 192.168.0.101 using the dubbo version 2.7.8. Last error is: Failed to invoke remote method: getSku, provider: dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=6804&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT, cause: message can not send, because channel is closed . url:dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&heartbeat=60000&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=6804&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT
+2020-12-23 21:22:39.220 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:39.227 [http-nio-8082-exec-5] ERROR cn.edu.xmu.other.dao.BeSharedPoDao - selectShare: Unknow Exception:Failed to invoke the method getSku in the service cn.edu.xmu.goods.client.IGoodsService. Tried 3 times of the providers [172.16.2.113:28091] (1/1) from the registry 47.115.162.144:8847 on the consumer 192.168.0.101 using the dubbo version 2.7.8. Last error is: Failed to invoke remote method: getSku, provider: dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=6804&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT, cause: message can not send, because channel is closed . url:dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&heartbeat=60000&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=6804&protocol=dubbo&qos.enable=false&register.ip=192.168.0.101&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT
+2020-12-23 21:22:39.967 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:40.674 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:41.395 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:42.103 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:42.811 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:43.787 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:44.110 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:44.345 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:22:44.586 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:23:48.436 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:23:48.767 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:23:48.960 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:23:50.190 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.301 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.758 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.830 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.872 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.910 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.953 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:28.955 [http-nio-8082-exec-7] ERROR cn.edu.xmu.other.dao.RegionDao - getAncestor: 操作的资源id不存在
+2020-12-23 21:59:28.989 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:29.351 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:29.706 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:30.093 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:30.787 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:31.165 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:31.552 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:31.901 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:32.228 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:32.613 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:32.978 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:32.981 [http-nio-8082-exec-9] INFO  cn.edu.xmu.other.dao.AddressDao - 地址不存在或已被删除,id:10000
+2020-12-23 21:59:33.646 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 21:59:33.649 [http-nio-8082-exec-1] INFO  cn.edu.xmu.other.dao.AddressDao - 地址不存在或已被删除,id:77583
+2020-12-23 21:59:34.016 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:14:48.319 [main] INFO  o.a.d.s.b.c.event.WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v2.7.8) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v2.7.8) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2020-12-23 22:14:48.328 [main] INFO  o.a.d.s.b.c.e.OverrideDubboConfigApplicationListener - Dubbo Config was overridden by externalized configuration {dubbo.application.name=customer-service, dubbo.application.qos-enable=false, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.protocol.name=dubbo, dubbo.protocol.port=28091, dubbo.registry.address=nacos://47.115.162.144:8847, dubbo.scan.base-packages=cn.edu.xmu.goods.service}
+2020-12-23 22:14:48.382 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-12-23 22:14:48.436 [main] INFO  cn.edu.xmu.other.CustomerApplication - Starting CustomerApplication on NULL0X73-FX63VM with PID 20884 (C:\^CODE\privilege-master\customer\target\classes started by ADMIN in C:\^CODE\privilege-master\customer)
+2020-12-23 22:14:48.437 [main] INFO  cn.edu.xmu.other.CustomerApplication - No active profile set, falling back to default profiles: default
+2020-12-23 22:14:49.163 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [referenceAnnotationBeanPostProcessor] has been registered.
+2020-12-23 22:14:49.164 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigAliasPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigAliasPostProcessor] has been registered.
+2020-12-23 22:14:49.165 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboLifecycleComponentApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboLifecycleComponentApplicationListener] has been registered.
+2020-12-23 22:14:49.165 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 22:14:49.166 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.beans.factory.config.DubboConfigDefaultPropertyValueBeanPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboConfigDefaultPropertyValueBeanPostProcessor] has been registered.
+2020-12-23 22:14:49.202 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-23 22:14:49.204 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-23 22:14:49.246 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-12-23 22:14:49.342 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, content : Root bean: class [org.apache.dubbo.config.ApplicationConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 22:14:49.343 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [com.alibaba.spring.beans.factory.annotation.ConfigurationBeanBindingPostProcessor]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [configurationBeanBindingPostProcessor] has been registered.
+2020-12-23 22:14:49.343 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.RegistryConfig#0, content : Root bean: class [org.apache.dubbo.config.RegistryConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 22:14:49.343 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, content : Root bean: class [org.apache.dubbo.config.ProtocolConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 22:14:49.344 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingRegistrar - The configuration bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, content : Root bean: class [org.apache.dubbo.config.ConsumerConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] has been registered.
+2020-12-23 22:14:49.457 [main] INFO  com.alibaba.spring.util.BeanRegistrar - The Infrastructure bean definition [Root bean: class [org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=nullwith name [dubboBootstrapApplicationListener] has been registered.
+2020-12-23 22:14:49.719 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 22:14:49.719 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-23 22:14:50.510 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2020-12-23 22:14:50.520 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-12-23 22:14:50.521 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-23 22:14:50.521 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-23 22:14:50.646 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-23 22:14:50.646 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2169 ms
+2020-12-23 22:14:50.937 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:application name="customer-service" qosEnable="false" hostname="NULL0X73-FX63VM" />] have been binding by the configuration properties [{name=customer-service, qos-enable=false}]
+2020-12-23 22:14:50.950 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:registry address="nacos://47.115.162.144:8847" port="8847" protocol="nacos" />] have been binding by the configuration properties [{address=nacos://47.115.162.144:8847}]
+2020-12-23 22:14:50.957 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:protocol name="dubbo" port="28091" />] have been binding by the configuration properties [{name=dubbo, port=28091}]
+2020-12-23 22:14:50.968 [main] INFO  c.a.s.b.f.a.ConfigurationBeanBindingPostProcessor - The configuration bean [<dubbo:consumer />] have been binding by the configuration properties [{check=false}]
+2020-12-23 22:14:50.974 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 22:14:51.921 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-12-23 22:14:52.198 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-23 22:14:52.527 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 22:14:53.139 [main] INFO  o.a.d.c.s.b.f.annotation.ReferenceBeanBuilder - The configBean[type:ReferenceBean] has been built.
+2020-12-23 22:14:53.573 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-23 22:14:54.094 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2020-12-23 22:14:54.107 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2020-12-23 22:14:54.121 [main] INFO  cn.edu.xmu.other.CustomerApplication - Started CustomerApplication in 6.098 seconds (JVM running for 6.693)
+2020-12-23 22:19:30.465 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-23 22:19:30.466 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-23 22:19:30.485 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-12-23 22:19:30.678 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:32.455 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:32.830 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:33.946 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:35.404 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:36.690 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:37.877 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:38.266 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:38.691 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:39.052 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:40.424 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:40.770 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:41.117 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:41.526 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:41.849 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:42.204 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:42.527 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:42.871 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:43.214 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:43.567 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:44.883 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:45.229 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:45.568 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:45.911 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:45.981 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:45.983 [http-nio-8082-exec-10] ERROR cn.edu.xmu.other.dao.RegionDao - getAncestor: 操作的资源id不存在
+2020-12-23 22:19:47.233 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:19:47.251 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:29.571 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:29.992 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.079 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.125 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.166 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.208 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.210 [http-nio-8082-exec-5] ERROR cn.edu.xmu.other.dao.RegionDao - getAncestor: 操作的资源id不存在
+2020-12-23 22:22:30.244 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.550 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:30.895 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:31.221 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:31.885 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:32.287 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:32.609 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:32.908 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:33.225 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:33.604 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:34.048 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:34.052 [http-nio-8082-exec-7] INFO  cn.edu.xmu.other.dao.AddressDao - 地址不存在或已被删除,id:10000
+2020-12-23 22:22:34.697 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:22:34.700 [http-nio-8082-exec-9] INFO  cn.edu.xmu.other.dao.AddressDao - 地址不存在或已被删除,id:77583
+2020-12-23 22:22:35.020 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:11.693 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:12.094 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:25.369 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:26.659 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:27.020 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:28.113 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:29.256 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:29.616 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:30.729 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:31.898 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:32.968 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:34.303 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:34.766 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:35.156 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:35.489 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:36.596 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:36.870 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:37.223 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:37.550 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:37.870 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:38.242 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:38.583 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:38.919 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:39.249 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:39.565 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:40.700 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:41.063 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:41.385 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:41.783 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:41.835 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:41.837 [http-nio-8082-exec-6] ERROR cn.edu.xmu.other.dao.RegionDao - getAncestor: 操作的资源id不存在
+2020-12-23 22:24:43.063 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:43.084 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:57.218 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:58.356 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:59.013 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:59.379 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:24:59.725 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:00.459 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:01.116 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:01.434 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:01.788 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:01.789 [http-nio-8082-exec-6] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '2020-12-22 1:2' could not be parsed at index 11
+2020-12-23 22:25:02.100 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:22.863 [http-nio-8082-exec-3] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "2020-12-40": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2020-12-40' could not be parsed: Invalid value for DayOfMonth (valid values 1 - 28/31): 40; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "2020-12-40": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2020-12-40' could not be parsed: Invalid value for DayOfMonth (valid values 1 - 28/31): 40
+ at [Source: (PushbackInputStream); line: 1, column: 13] (through reference chain: cn.edu.xmu.other.model.vo.CustomerRegisterReceiveVo["birthday"])]
+2020-12-23 22:25:38.790 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:39.157 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:39.546 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:39.913 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:40.231 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:40.530 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:40.830 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:41.990 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:43.124 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:44.323 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:45.627 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:46.701 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:46.703 [http-nio-8082-exec-7] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '1234-1321-321' could not be parsed at index 7
+2020-12-23 22:25:47.838 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:47.842 [http-nio-8082-exec-8] ERROR cn.edu.xmu.other.controller.ShareController - DateTime format error Text '23432fq' could not be parsed at index 0
+2020-12-23 22:25:49.036 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:50.168 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:50.505 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:51.595 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:52.666 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:53.835 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:54.865 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:55.936 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:57.104 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:58.146 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:25:59.169 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:00.274 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:01.325 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:02.381 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:03.588 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:03.597 [http-nio-8082-exec-3] ERROR cn.edu.xmu.other.dao.BeSharedPoDao - selectShare: Unknow Exception:Failed to invoke the method getSku in the service cn.edu.xmu.goods.client.IGoodsService. Tried 3 times of the providers [172.16.2.113:28091] (1/1) from the registry 47.115.162.144:8847 on the consumer 192.168.13.1 using the dubbo version 2.7.8. Last error is: Failed to invoke remote method: getSku, provider: dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=20884&protocol=dubbo&qos.enable=false&register.ip=192.168.13.1&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT, cause: message can not send, because channel is closed . url:dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&heartbeat=60000&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=20884&protocol=dubbo&qos.enable=false&register.ip=192.168.13.1&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT
+2020-12-23 22:26:04.796 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:04.815 [http-nio-8082-exec-4] ERROR cn.edu.xmu.other.dao.BeSharedPoDao - selectShare: Unknow Exception:Failed to invoke the method getSku in the service cn.edu.xmu.goods.client.IGoodsService. Tried 3 times of the providers [172.16.2.113:28091] (1/1) from the registry 47.115.162.144:8847 on the consumer 192.168.13.1 using the dubbo version 2.7.8. Last error is: Failed to invoke remote method: getSku, provider: dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=20884&protocol=dubbo&qos.enable=false&register.ip=192.168.13.1&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT, cause: message can not send, because channel is closed . url:dubbo://172.16.2.113:28091/cn.edu.xmu.goods.client.IGoodsService?anyhost=true&application=customer-service&category=providers&check=false&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&heartbeat=60000&init=false&interface=cn.edu.xmu.goods.client.IGoodsService&metadata-type=remote&methods=getFreightModelIdBySku,getGoodWeightBySku,getSimpleSpuById,classifySku,getSkus,getPrice,getSku,getShopIdBySKUId,getPriceAndName,getPriceAndNameByOther,getShopBySKUId,isSkuEqualSpu,deleteFreightModelIdBySku&path=cn.edu.xmu.goods.client.IGoodsService&pid=20884&protocol=dubbo&qos.enable=false&register.ip=192.168.13.1&release=2.7.8&remote.application=dubbo-goods&revision=0.0.1&side=consumer&sticky=false&timestamp=1608636407754&version=0.0.1-SNAPSHOT
+2020-12-23 22:26:05.826 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:06.887 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:07.885 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:08.916 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:09.950 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:11.120 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:11.398 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:11.713 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:12.040 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:54.616 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:54.959 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:55.197 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:26:56.415 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:11.902 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:12.180 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:12.810 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:13.018 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:13.311 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:13.555 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:14.132 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:14.376 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:14.642 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:14.880 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:15.113 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:15.379 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:15.633 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:16.256 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:16.472 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:17.073 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:17.327 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:17.940 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:18.169 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:18.802 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:19.044 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:19.683 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:19.921 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:20.522 [http-nio-8082-exec-1] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:20.767 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:21.376 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:21.387 [http-nio-8082-exec-4] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏3746381已被永久删除
+2020-12-23 22:27:21.636 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:21.644 [http-nio-8082-exec-5] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏3811915已被永久删除
+2020-12-23 22:27:21.898 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:21.904 [http-nio-8082-exec-6] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏3779148已被永久删除
+2020-12-23 22:27:22.153 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:22.831 [http-nio-8082-exec-9] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:22.836 [http-nio-8082-exec-9] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏3779149已被永久删除
+2020-12-23 22:27:23.075 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:23.759 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:23.762 [http-nio-8082-exec-2] INFO  cn.edu.xmu.other.dao.FavoriteDao - 该收藏不属于该用户,id:3782810
+2020-12-23 22:27:24.012 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:24.013 [http-nio-8082-exec-4] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏不存在或已被删除,id:37
+2020-12-23 22:27:24.243 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:24.245 [http-nio-8082-exec-6] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏不存在或已被删除,id:3227
+2020-12-23 22:27:24.478 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:24.479 [http-nio-8082-exec-8] INFO  cn.edu.xmu.other.dao.FavoriteDao - 收藏不存在或已被删除,id:233
+2020-12-23 22:27:24.717 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:24.719 [http-nio-8082-exec-10] INFO  cn.edu.xmu.other.dao.FavoriteDao - 该收藏不属于该用户,id:3782808
+2020-12-23 22:27:25.289 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:25.879 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:26.534 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:26.816 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:27.472 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:28.080 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:28.722 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:29.346 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:30.040 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:30.657 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:30.943 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:31.598 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:31.872 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:32.155 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:32.751 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:33.370 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:34.035 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:34.604 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:34.836 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:35.391 [http-nio-8082-exec-10] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:36.004 [http-nio-8082-exec-2] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:37.111 [http-nio-8082-exec-3] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:38.236 [http-nio-8082-exec-4] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:39.300 [http-nio-8082-exec-5] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:40.335 [http-nio-8082-exec-6] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:41.334 [http-nio-8082-exec-7] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null
+2020-12-23 22:27:42.365 [http-nio-8082-exec-8] ERROR cn.edu.xmu.ooad.annotation.AuditAspect - the api path is null

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.xmu.other.mapper.AddressPoMapper" >
+  <resultMap id="BaseResultMap" type="cn.edu.xmu.other.model.po.AddressPo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="customer_id" property="customerId" jdbcType="BIGINT" />
+    <result column="region_id" property="regionId" jdbcType="BIGINT" />
+    <result column="detail" property="detail" jdbcType="VARCHAR" />
+    <result column="consignee" property="consignee" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="be_default" property="beDefault" jdbcType="TINYINT" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, customer_id, region_id, detail, consignee, mobile, be_default, gmt_create, gmt_modified
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.edu.xmu.other.model.po.AddressPoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from address
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from address
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from address
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.xmu.other.model.po.AddressPo" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into address (customer_id, region_id, detail, 
+      consignee, mobile, be_default, 
+      gmt_create, gmt_modified)
+    values (#{customerId,jdbcType=BIGINT}, #{regionId,jdbcType=BIGINT}, #{detail,jdbcType=VARCHAR}, 
+      #{consignee,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{beDefault,jdbcType=TINYINT}, 
+      #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.xmu.other.model.po.AddressPo" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into address
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="customerId != null" >
+        customer_id,
+      </if>
+      <if test="regionId != null" >
+        region_id,
+      </if>
+      <if test="detail != null" >
+        detail,
+      </if>
+      <if test="consignee != null" >
+        consignee,
+      </if>
+      <if test="mobile != null" >
+        mobile,
+      </if>
+      <if test="beDefault != null" >
+        be_default,
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create,
+      </if>
+      <if test="gmtModified != null" >
+        gmt_modified,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="customerId != null" >
+        #{customerId,jdbcType=BIGINT},
+      </if>
+      <if test="regionId != null" >
+        #{regionId,jdbcType=BIGINT},
+      </if>
+      <if test="detail != null" >
+        #{detail,jdbcType=VARCHAR},
+      </if>
+      <if test="consignee != null" >
+        #{consignee,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="beDefault != null" >
+        #{beDefault,jdbcType=TINYINT},
+      </if>
+      <if test="gmtCreate != null" >
+        #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtModified != null" >
+        #{gmtModified,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update address
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.customerId != null" >
+        customer_id = #{record.customerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.regionId != null" >
+        region_id = #{record.regionId,jdbcType=BIGINT},
+      </if>
+      <if test="record.detail != null" >
+        detail = #{record.detail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.consignee != null" >
+        consignee = #{record.consignee,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null" >
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beDefault != null" >
+        be_default = #{record.beDefault,jdbcType=TINYINT},
+      </if>
+      <if test="record.gmtCreate != null" >
+        gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmtModified != null" >
+        gmt_modified = #{record.gmtModified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update address
+    set id = #{record.id,jdbcType=BIGINT},
+      customer_id = #{record.customerId,jdbcType=BIGINT},
+      region_id = #{record.regionId,jdbcType=BIGINT},
+      detail = #{record.detail,jdbcType=VARCHAR},
+      consignee = #{record.consignee,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      be_default = #{record.beDefault,jdbcType=TINYINT},
+      gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modified = #{record.gmtModified,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.xmu.other.model.po.AddressPo" >
+    update address
+    <set >
+      <if test="customerId != null" >
+        customer_id = #{customerId,jdbcType=BIGINT},
+      </if>
+      <if test="regionId != null" >
+        region_id = #{regionId,jdbcType=BIGINT},
+      </if>
+      <if test="detail != null" >
+        detail = #{detail,jdbcType=VARCHAR},
+      </if>
+      <if test="consignee != null" >
+        consignee = #{consignee,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="beDefault != null" >
+        be_default = #{beDefault,jdbcType=TINYINT},
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtModified != null" >
+        gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.xmu.other.model.po.AddressPo" >
+    update address
+    set customer_id = #{customerId,jdbcType=BIGINT},
+      region_id = #{regionId,jdbcType=BIGINT},
+      detail = #{detail,jdbcType=VARCHAR},
+      consignee = #{consignee,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      be_default = #{beDefault,jdbcType=TINYINT},
+      gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

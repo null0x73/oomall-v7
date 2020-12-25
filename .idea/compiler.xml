@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="privilegeservice-client" />
+        <module name="privilegeservice" />
+        <module name="aftersale" />
+        <module name="logservice" />
+        <module name="user-gateway" />
+        <module name="customer" />
+        <module name="privilegegateway" />
+        <module name="goods-client" />
+        <module name="core" />
+        <module name="public-test" />
+        <module name="advertisement" />
+        <module name="order-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="advertisement" target="11" />
+      <module name="aftersale" target="11" />
+      <module name="core" target="11" />
+      <module name="customer" target="11" />
+      <module name="goods-client" target="11" />
+      <module name="logservice" target="11" />
+      <module name="oomall" target="11" />
+      <module name="order-client" target="11" />
+      <module name="privilegegateway" target="11" />
+      <module name="privilegeservice" target="11" />
+      <module name="privilegeservice-client" target="11" />
+      <module name="public-test" target="11" />
+      <module name="user-gateway" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="advertisement" options="-parameters" />
+      <module name="aftersale" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="customer" options="-parameters" />
+      <module name="goods-client" options="-parameters" />
+      <module name="logservice" options="-parameters" />
+      <module name="order-client" options="-parameters" />
+      <module name="privilegegateway" options="-parameters" />
+      <module name="privilegeservice" options="-parameters" />
+      <module name="privilegeservice-client" options="-parameters" />
+      <module name="public-test" options="-parameters" />
+      <module name="user-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
