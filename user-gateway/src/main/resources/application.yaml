@@ -1184,6 +1184,7 @@ spring:
             - Path=/region/{rid}/price
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
 
@@ -1193,6 +1194,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-2
@@ -1201,6 +1203,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
 
@@ -1210,6 +1213,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/clone
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-4
@@ -1218,6 +1222,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-5
@@ -1226,6 +1231,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-6
@@ -1234,6 +1240,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}
             - Method=DELETE
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-7
@@ -1242,6 +1249,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/default
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-8
@@ -1250,6 +1258,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/weightItems
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-9
@@ -1258,6 +1267,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/weightItems
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-10
@@ -1266,6 +1276,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/pieceItems
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-11
@@ -1274,6 +1285,7 @@ spring:
             - Path=/shops/{shopId}/freightmodels/{id}/pieceItems
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-12
@@ -1282,6 +1294,7 @@ spring:
             - Path=/shops/{shopId}/weightItems/{id}
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-13
@@ -1290,6 +1303,7 @@ spring:
             - Path=/shops/{shopId}/weightItems/{id}
             - Method=DELETE
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-14
@@ -1298,6 +1312,7 @@ spring:
             - Path=/shops/{shopId}/pieceItems/{id}
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-freight-15
@@ -1306,6 +1321,7 @@ spring:
             - Path=/shops/{shopId}/pieceItems/{id}
             - Method=DELETE
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: all-payment
@@ -1313,6 +1329,8 @@ spring:
           predicates:
             - Path=/payments/states,/payments/patterns
             - Method=GET
+          filters:
+            - PrefixPath=/order
 
         - id: customer-payment1
           uri: http://${order-ip.payment}
@@ -1320,6 +1338,7 @@ spring:
             - Path=/orders/{id}/payments
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-payment1
@@ -1328,6 +1347,7 @@ spring:
             - Path=/orders/{id}/payments
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
 
@@ -1337,6 +1357,7 @@ spring:
             - Path=/aftersales/{id}/payments
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-payment3
@@ -1345,6 +1366,7 @@ spring:
             - Path=/aftersales/{id}/payments
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-payment4
@@ -1353,6 +1375,7 @@ spring:
             - Path=/orders/{id}/refunds
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-payment5
@@ -1361,6 +1384,7 @@ spring:
             - Path=/aftersales/{id}/refunds
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-payment-1
@@ -1369,6 +1393,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}/payments
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-payment-2
@@ -1377,6 +1402,7 @@ spring:
             - Path=/shops/{shopId}/aftersales/{id}/payments
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-payment-3
@@ -1385,6 +1411,7 @@ spring:
             - Path=/shops/{shopId}/payments/{id}/refunds
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-payment-4
@@ -1393,6 +1420,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}/refunds
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: admin-payment-5
@@ -1401,6 +1429,7 @@ spring:
             - Path=/shops/{shopId}/aftersales/{id}/refunds
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: all-order
@@ -1409,6 +1438,7 @@ spring:
             - Path=/orders/states
             - Method=GET
           filters:
+            - PrefixPath=/order
 
         - id: customer-order-get
           uri: http://${order-ip.order}
@@ -1416,6 +1446,7 @@ spring:
             - Path=/orders
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-post
@@ -1424,6 +1455,7 @@ spring:
             - Path=/orders
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-id-get
@@ -1432,6 +1464,7 @@ spring:
             - Path=/orders/{id}
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-id-put
@@ -1440,6 +1473,7 @@ spring:
             - Path=/orders/{id}
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-id-delete
@@ -1448,6 +1482,7 @@ spring:
             - Path=/orders/{id}
             - Method=DELETE
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-id-confirm
@@ -1456,6 +1491,7 @@ spring:
             - Path=/orders/{id}/confirm
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: customer-order-id-groupon
@@ -1464,6 +1500,7 @@ spring:
             - Path=/orders/{id}/groupon-normal
             - Method=POST
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: a-order-get
@@ -1472,6 +1509,7 @@ spring:
             - Path=/shops/{shopId}/orders
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: a-order-id-put
@@ -1480,6 +1518,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: a-order-id-get
@@ -1488,6 +1527,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}
             - Method=GET
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: a-order-id-del
@@ -1496,6 +1536,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}
             - Method=DELETE
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         - id: a-order-id-put
@@ -1504,6 +1545,7 @@ spring:
             - Path=/shops/{shopId}/orders/{id}/deliver
             - Method=PUT
           filters:
+            - PrefixPath=/order
             - Auth=authorization
 
         #其他模块 =================================================
